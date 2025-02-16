@@ -1,0 +1,144 @@
+.derecha{
+    img{
+       width: 4rem;
+       &:hover{
+        background-color: $dorado;
+        cursor: pointer;}
+
+
+
+    }
+}
+
+.dark-mode-boton{
+    width: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @include tablet{
+              
+
+    }
+    
+    
+    @include tablet{
+        width: 5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+   
+}
+
+.barra{
+    display: contents;
+   
+    
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+               
+           
+        }
+}
+
+
+
+.navegacion, .navegacion2{  
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity 0.3s linear, height 0.5s linear;
+    height: 0;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+         
+   @include tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 2rem;
+    visibility: visible;
+    
+
+    
+    
+  
+}
+  
+    a{
+        color: $azul;
+        text-decoration: none;
+        font-size: 2.2rem;
+        
+        img{
+            width: 5rem;
+            
+        }
+    }
+
+        @include tablet{
+            margin-right: 2rem;
+
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+
+
+  
+
+}
+
+//** menu hmburguesa**//
+
+.mobile-menu,
+.mobile-menu2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+  
+    
+    @include tablet {
+        display: none;
+
+    }
+
+    img{
+        
+        width: 5rem;
+
+        &:hover{
+            
+            cursor: pointer;
+            background-color: lighten($dorado, 1);
+        }
+
+
+    }
+}
+
+.mostrar, .mostrar2{ 
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+   
+  
+} 
+
+.carrito{
+    img{
+    width: 4rem;
+    margin-top: 3rem;
+    &:hover{
+     background-color: $dorado;
+     cursor: pointer;}
+    }
+
+
+}

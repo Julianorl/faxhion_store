@@ -1,0 +1,76 @@
+.no-webp .inicio{
+    background-image: url(/build/img/nosotros.jpg);
+}
+.webp .inicio{
+    background-image: url(/build/img/nosotros.webp);
+}
+
+
+    .overlay{
+        position: relative;
+        width: 100%;
+        background-color: rgba(33, 28, 28, 0.5);
+        background-color: rgb(33 28 28 / 50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        
+    }
+
+header{
+    background-color:  $grisOscuro;
+   
+    h1{
+        text-align: left;
+        color: $dorado;
+        font-weight: $black;
+        line-height: 1;
+        max-width: 30;
+        margin-left: 4rem;
+        padding-bottom: 2rem;
+        
+        
+
+    }
+    
+   
+    &.inicio{
+        
+        background-position: center center;
+        background-size: cover;
+
+    }      
+
+   
+
+.contenido-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &.fixed{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: $grisOscuro;
+        height: 10rem;
+        
+    
+    }
+
+}
+
+.navegacion{
+   
+    a{        
+        
+        &:hover{
+         color: $dorado;
+         border-radius: 1rem;
+         img{            
+            background-color: $dorado;
+            }
+        } 
+     }  
+    }}

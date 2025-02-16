@@ -1,0 +1,54 @@
+ul {
+    list-style: none;
+   
+}
+.submenu {
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    left:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box; }
+
+    .columns {
+        width: 100%;
+        float: left;
+        box-sizing: border-box; }
+      
+      /* For devices larger than 400px */
+      @media tablet {
+        .container {
+          width: 85%;
+          padding: 0; }
+      }
+
+      .u-pull-right {
+  float: right; }
+
+  .borrar-seleccion {
+    background-color: $rojo;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    &:hover{
+        background-color: darken($rojo, 7);
+        cursor: pointer;
+    }
+}

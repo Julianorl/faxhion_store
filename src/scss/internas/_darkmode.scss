@@ -1,0 +1,49 @@
+.dark-mode{
+    .inicio{
+        .overlay{
+             
+        background-color: rgba(33, 28, 28, 0.8);
+        background-color: rgb(33 28 28 / 80%);
+        }
+        }
+
+    background-color: darken($grisOscuro, 10);
+
+    P{
+        color: $blanco;
+    }
+    
+
+    a,h1,h2,h3,h4{
+        color: $gris;
+    }
+
+
+    .icono{
+        filter: invert(100%);
+    }
+
+    .anuncio{
+        background-color: $grisOscuro;
+        border: solid 1px $grisOscuro;
+    }
+
+
+  
+    .formulario{
+        legend{
+            color: $gris;
+        }
+
+        label{
+            color: $blanco;
+        }
+
+        .icono-formulario{
+            filter: invert(100%);
+        }
+        
+    }
+    
+
+}

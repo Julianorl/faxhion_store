@@ -1,0 +1,25 @@
+.boton-amarillo-block{
+    @include boton($amarillo, block);
+    
+}
+
+.boton-amarillo{
+    @include boton($amarillo, inline-block)
+}
+
+.boton-verde{
+
+    @include boton($verde, inline-block);
+    
+}
+.boton-violeta{
+
+    @include boton($primario, flex);
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    
+    img{width: 5rem;
+    align-items: center;}
+
+    }

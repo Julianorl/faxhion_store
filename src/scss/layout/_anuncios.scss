@@ -1,0 +1,76 @@
+
+    .contenedor-anuncio{
+
+        margin: 3rem;
+
+        @include tablet{
+        @include grid(3, 2rem);
+      
+        
+    }
+}
+
+.anuncio{
+
+  
+    background-color: lighten($salmon, 5);
+    border: 1px  solid darken($primario, 10);
+    padding: 2rem;
+    margin: 1rem;
+    align-content: center;
+
+  
+    .contenido-anuncio{
+        
+      
+        padding: 2rem;
+
+    }
+
+    h3,h4,p{
+        margin: 0;
+        
+       
+    }
+    
+   }
+
+.precio{
+    color : $negro;
+    font-weight: $bold;
+    font-size: 3rem;
+
+    
+   
+}
+
+.iconos-caracteristicas{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 1;
+    max-width: 5rem;
+    
+
+
+    li{
+        flex: 1;
+        display: flex;
+        justify-content: left;
+        margin: 0;
+
+        img{
+           margin-left: 3rem;
+            
+        }
+       
+    }
+}
+
+
+
+
+
+

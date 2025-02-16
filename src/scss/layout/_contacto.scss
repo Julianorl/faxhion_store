@@ -1,0 +1,32 @@
+ .imagen-contacto{
+
+    background-image: url(/build/img/grafico1.jpg);
+
+}
+
+
+.imagen-contacto{
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+.overlay{
+        h2{
+            font-size: 4rem;
+            font-weight: $black;
+            color: $azul;
+        }
+
+        p{
+            font-size: 1.8rem;
+            font-weight: $regular;
+            color:  $blanco;
+        }
+    .boton-amarillo{
+        margin-bottom: 3rem;
+    }
+
+} 
+}
