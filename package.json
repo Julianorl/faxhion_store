@@ -1,14 +1,16 @@
 {
-  "name": "bienesraices",
+  "name": "tienda",
   "version": "1.0.0",
-  "description": "Curso Desarrollo Web Completo",
+  "description": "Ejemplo de comercio",
   "main": "gulpfile.js",
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "test": "node ./node_modules/.bin/_mocha"
   },
   "author": "Julian Orjuela",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^5.2.0",
     "cssnano": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -21,12 +23,22 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
     "gulp-terser-js": "^5.2.2",
     "gulp-webp": "^4.0.1",
+    "mocha": "^11.1.0",
     "sass": "^1.83.4",
     "terser": "^4.8.0"
   },
   "dependencies": {
     "gh-pages": "^6.3.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "mocha",
+    "chai",
+    "javascript"
+  ]
 }

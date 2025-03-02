@@ -10,7 +10,14 @@
     }
 }
 
+
 .anuncio{
+
+    img{
+        aspect-ratio: 0.5/2;
+        object-fit: cover;
+       
+    }
 
   
     background-color: lighten($salmon, 5);
@@ -20,10 +27,16 @@
     align-content: center;
 
   
+
+  
     .contenido-anuncio{
         
       
         padding: 2rem;
+
+        img{
+            aspect-ratio: 2/1;
+        }
 
     }
 
@@ -68,9 +81,3 @@
        
     }
 }
-
-
-
-
-
-

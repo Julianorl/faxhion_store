@@ -22,12 +22,13 @@ const paths = {
 function css() {
     return src(paths.scss)
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(postcss([autoprefixer(), cssnano()]))
         // .pipe(postcss([autoprefixer()]))
         .pipe(sourcemaps.write('.'))
         .pipe(dest('build/css'));
 }
+
 
 function javascript() {
     return src(paths.js)

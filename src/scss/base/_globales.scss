@@ -16,6 +16,12 @@ p {
     font-size: 2rem;
 }
 .contenedor {
+    .alinear-derecha {
+      .boton-verde{
+        color: $negro;
+      }
+    }
+
     width: 95%;
     max-width: 200rem;
     margin: 0 auto;

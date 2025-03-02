@@ -1,7 +1,9 @@
- .imagen-contacto{
-
+.no-webp .imagen-contacto{
     background-image: url(/build/img/grafico1.jpg);
-
+}
+.webp .imagen-contacto{
+    background-image: url(/build/img/grafico1.webp);
+    
 }
 
 
@@ -25,6 +27,7 @@
             color:  $blanco;
         }
     .boton-amarillo{
+        color: $negro;
         margin-bottom: 3rem;
     }
 

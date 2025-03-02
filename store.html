@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faxhion Store</title>
+    <meta name="description" content="Tienda de ropa de moda">
+    
+    <!--prefetch-->
+    <link rel="prefetch" href="/index.html">
+    
+    <!--preload-->
+    <link rel="preload" href="/build/css/app.css" as="Style">
     <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="preload" href="/build/js/bundle.min.js" as="Script">
+
+
 </head>
     <body>
         
@@ -13,10 +23,10 @@
                <div class="barra" id="barra">
                      <div class="izquierda">                    
                         <div class="mobile-menu">
-                        <img src="/build/img/barrasazul.svg.svg" alt="menu hamburguesa">
+                        <img width="50" height="50" loading="lazy" src= "/build/img/barrasazul.svg.svg" alt="menu hamburguesa">
                         </div>
                     <nav class="navegacion mostrar">
-                        <a href="/index.html"><img src="/build/img/homeazul.svg.svg" alt="Home"></a>
+                        <a href="/index.html"><img width="50" height="50" loading="lazy" src="/build/img/homeazul.svg.svg" loading="lazy" alt="Home"></a>
                         <a href="/store.html">store</a>
                         <a href="/contacto.html">Contacto</a>
                     </nav><!-- navegacion -->
@@ -24,7 +34,7 @@
                 <div class="carrito catwo columns u-pull-right">
                     <ul>
                         <li class="submenu">
-                                <img src="/build/img/carrito.svg" id="img-carrito">
+                                <img width="50" height="50" loading="lazy" src="/build/img/carrito.svg" alt="carrito" id="img-carrito">
                                 <div id="carrito">
                                         
                                         <table id="lista-carrito" class="u-full-width">
@@ -46,10 +56,10 @@
 
                     <div class="derecha">
                         <div class="mobile-menu2">
-                            <img src="/build/img/grid.svg" alt="menu hamburguesa">
+                            <img width="50" height="50" loading="lazy" src="/build/img/grid.svg" loading="lazy" alt="menu hamburguesa">
                         </div> 
                         <div class="navegacion2 mostrar2">
-                        <img  class="dark-mode-boton" src="/build/img/moonblue.svg.svg" alt="boton dark mode">
+                        <img  class="dark-mode-boton" loading="lazy" src="/build/img/moonblue.svg.svg" alt="boton dark mode">
                     </div>
                 
             </div><!-- barra -->          
@@ -62,476 +72,451 @@
         <h1>Store</h1>
         <div class="contenedor-anuncio" id="productos">   
 
-
-
             <div class="anuncio">
 
                 <picture>
-
-                    <source srcset="/build/img/1.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/1.jpg" alt="anuncio2">
+                    <source srcset="/build/img/1.webp" type="image/webp" alt="anuncio1">
+                    <img width="354" height="341" loading="lazy" src="/build/img/1.jpg" alt="anuncio1">
                 
-
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <p class="precio">$200000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-
-                    </ul><!--iconos-caracteristicas-->                    
-                                       
-                </div><!--contenido-anuncio-->
-               
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="1"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
-               
-            </div><!--anuncio1-->
-            <div class="anuncio">
-
-                <picture>
-
-                    <source srcset="/build/img/2.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/2.jpg" alt="anuncio2">
-                
-
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <p class="precio">$340000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-
-                    </ul><!--iconos-caracteristicas-->                    
-                                       
-                </div><!--contenido-anuncio-->
-               
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="2"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
-               
-            </div><!--anuncio2-->
-            <div class="anuncio">
-
-                <picture>
-
-                    <source srcset="/build/img/3.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/3.jpg" alt="anuncio2">
-                
-
                 </picture>
 
                 <div class="contenido-anuncio">
                     <p class="precio">$240000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-
-                    </ul><!--iconos-caracteristicas-->                    
-                                       
-                </div><!--contenido-anuncio-->
-               
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="3"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
-               
-            </div><!--anuncio3-->
-            <div class="anuncio">
-
-                <picture>
-
-                    <source srcset="/build/img/4.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/4.jpg" alt="anuncio2">
-                
-
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <p class="precio">$200000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
 
                     </ul><!--iconos-caracteristicas-->                    
                                        
-                </div><!--contenido-anuncio-->
+                </div><!--contenido-anuncio1-->
                
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="4"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
-               
-            </div><!--anuncio1-->
-            <div class="anuncio">
-
-                <picture>
-
-                    <source srcset="/build/img/5.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/5.jpg" alt="anuncio2">
-                
-
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <p class="precio">$340000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-
-                    </ul><!--iconos-caracteristicas-->                    
-                                       
-                </div><!--contenido-anuncio-->
-               
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="5"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
-               
-            </div><!--anuncio5-->
-            <div class="anuncio">
-
-                <picture>
-
-                    <source srcset="/build/img/6.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/6.jpg" alt="anuncio2">
-                
-
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <p class="precio">$240000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-
-                    </ul><!--iconos-caracteristicas-->                    
-                                       
-                </div><!--contenido-anuncio-->
-               
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="6"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="1"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
                
             </div><!--anuncio6-->
             <div class="anuncio">
 
                 <picture>
-
-                    <source srcset="/build/img/7.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/7.jpg" alt="anuncio2">
+                    <source srcset="/build/img/2.webp" type="image/webp" alt="anuncio1">
+                    <img width="354" height="341" loading="lazy" src="/build/img/2.jpg" alt="anuncio2">
                 
-
                 </picture>
 
                 <div class="contenido-anuncio">
-                    <p class="precio">$200000</p>
+                    <p class="precio">$240000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
 
                     </ul><!--iconos-caracteristicas-->                    
                                        
                 </div><!--contenido-anuncio-->
                
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="7"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="2"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+               
+            </div><!--anuncio2-->
+            <div class="anuncio">
+
+                <picture>
+                    <source srcset="/build/img/3.webp" type="image/webp" alt="anuncio1">
+                    <img width="354" height="341" loading="lazy" src="/build/img/3.jpg" alt="anuncio3">
+                
+                </picture>
+
+                <div class="contenido-anuncio">
+                    <p class="precio">$240000</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+
+                    </ul><!--iconos-caracteristicas-->                    
+                                       
+                </div><!--contenido-anuncio-->
+               
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="3"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+               
+            </div><!--anuncio3-->
+            <div class="anuncio">
+
+                <picture>
+                    <source srcset="/build/img/4.webp" type="image/webp" alt="anuncio1">
+                    <img width="354" height="341" loading="lazy" src="/build/img/4.jpg" alt="anuncio4">
+                
+                </picture>
+
+                <div class="contenido-anuncio">
+                    <p class="precio">$240000</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+
+                    </ul><!--iconos-caracteristicas-->                    
+                                       
+                </div><!--contenido-anuncio1-->
+               
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="4"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+               
+            </div><!--anuncio4-->
+            <div class="anuncio">
+
+                <picture>
+                    <source srcset="/build/img/5.webp" type="image/webp" alt="anuncio1">
+                    <img width="354" height="341" loading="lazy" src="/build/img/5.jpg" alt="anuncio5">
+                
+                </picture>
+
+                <div class="contenido-anuncio">
+                    <p class="precio">$240000</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+
+                    </ul><!--iconos-caracteristicas-->                    
+                                       
+                </div><!--contenido-anuncio-->
+               
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="5"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+               
+            </div><!--anuncio5-->
+            <div class="anuncio">
+
+                <picture>
+                    <source srcset="/build/img/6.webp" type="image/webp" alt="anuncio1">
+                    <img width="354" height="341" loading="lazy" src="/build/img/6.jpg" alt="anuncio6">
+                
+                </picture>
+
+                <div class="contenido-anuncio">
+                    <p class="precio">$240000</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+
+                    </ul><!--iconos-caracteristicas-->                    
+                                       
+                </div><!--contenido-anuncio-->
+               
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="6"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+               
+            </div><!--anuncio6-->
+            <div class="anuncio">
+
+                <picture>
+                    <source srcset="/build/img/7.webp" type="image/webp" alt="anuncio1">
+                    <img width="354" height="341" loading="lazy" src="/build/img/7.jpg" alt="anuncio7">
+                
+                </picture>
+
+                <div class="contenido-anuncio">
+                    <p class="precio">$240000</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+
+                    </ul><!--iconos-caracteristicas-->                    
+                                       
+                </div><!--contenido-anuncio1-->
+               
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="7"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
                
             </div><!--anuncio7-->
             <div class="anuncio">
 
                 <picture>
-
-                    <source srcset="/build/img/8.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/8.jpg" alt="anuncio2">
+                    <source srcset="/build/img/8.webp" type="image/webp" alt="anuncio1">
+                    <img width="354" height="341" loading="lazy" src="/build/img/8.jpg" alt="anuncio8">
                 
-
                 </picture>
 
                 <div class="contenido-anuncio">
-                    <p class="precio">$340000</p>
+                    <p class="precio">$240000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
 
                     </ul><!--iconos-caracteristicas-->                    
                                        
                 </div><!--contenido-anuncio-->
                
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="8"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="8"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
                
             </div><!--anuncio8-->
             <div class="anuncio">
 
                 <picture>
-
-                    <source srcset="/build/img/9.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/9.jpg" alt="anuncio2">
+                    <source srcset="/build/img/9.webp" type="image/webp" alt="anuncio1">
+                    <img width="354" height="341" loading="lazy" src="/build/img/9.jpg" alt="anuncio9">
                 
-
                 </picture>
 
                 <div class="contenido-anuncio">
                     <p class="precio">$240000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
 
                     </ul><!--iconos-caracteristicas-->                    
                                        
                 </div><!--contenido-anuncio-->
                
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="9"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="9"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
                
             </div><!--anuncio9-->
+            
             <div class="anuncio">
 
                 <picture>
-
-                    <source srcset="/build/img/10.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/10.jpg" alt="anuncio2">
+                    <source srcset="/build/img/10.webp" type="image/webp" alt="anuncio1">>
+                    <img width="354" height="341" loading="lazy" src="/build/img/10.jpg" alt="anuncio10">
                 
-
                 </picture>
 
                 <div class="contenido-anuncio">
-                    <p class="precio">$200000</p>
+                    <p class="precio">$240000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
 
                     </ul><!--iconos-caracteristicas-->                    
                                        
-                </div><!--contenido-anuncio-->
+                </div><!--contenido-anuncio1-->
                
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="10"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="10"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
                
             </div><!--anuncio10-->
             <div class="anuncio">
 
                 <picture>
-
-                    <source srcset="/build/img/11.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/11.jpg" alt="anuncio2">
+                    <source srcset="/build/img/11.webp" type="image/webp" alt="anuncio1">>
+                    <img width="354" height="341" loading="lazy" src="/build/img/11.jpg" alt="anuncio11">
                 
-
-                </picture>
-
-                <div class="contenido-anuncio">
-                    <p class="precio">$340000</p>
-                    <ul class="iconos-caracteristicas">
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
-                        </li>
-                        <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
-                        </li>
-                        <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
-                        </li>                        
-
-                    </ul><!--iconos-caracteristicas-->                    
-                                       
-                </div><!--contenido-anuncio-->
-               
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="11"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
-               
-            </div><!--anuncio11-->
-            <div class="anuncio">
-
-                <picture>
-
-                    <source srcset="/build/img/12.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/12.jpg" alt="anuncio2">
-                
-
                 </picture>
 
                 <div class="contenido-anuncio">
                     <p class="precio">$240000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
                         </li>
                         <li>
-                            <img class="icono" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
                         </li>
                         <li>
-                            <img class="icono"loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
                         </li>                        
 
                     </ul><!--iconos-caracteristicas-->                    
                                        
                 </div><!--contenido-anuncio-->
                
-                <a href="#" class="boton-violeta  agregar-carrito" data-id="12"><img src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="11"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
                
-            </div><!--anuncio12-->
+            </div><!--anuncio11-->
+            <div class="anuncio">
+
+                <picture>
+                    <source srcset="/build/img/12.webp" type="image/webp" alt="anuncio1">>
+                    <img width="354" height="341" loading="lazy" src="/build/img/12.jpg" alt="anuncio12">
+                
+                </picture>
+
+                <div class="contenido-anuncio">
+                    <p class="precio">$240000</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/air.svg" alt="icono aire">
+                        </li>
+                        <li>
+                            <img class="icono"  width="30" height="30" loading="lazy" src="/build/img/cool.svg" alt="icono cool">
+                        </li>
+                        <li>
+                            <img class="icono" width="30" height="30" loading="lazy" src="/build/img/lavadora.svg"  alt="icono machine">
+                        </li>                        
+
+                    </ul><!--iconos-caracteristicas-->                    
+                                       
+                </div><!--contenido-anuncio-->
+               
+                <a href="#" class="boton-violeta  agregar-carrito" data-id="12"><img width="30" height="30" loading="lazy" src="/build/img/carrito_mas.svg" alt="carrito-mas"></a>
+               
+            </div><!--anuncio3-->
 
         </div>
         
@@ -551,6 +536,7 @@
         </div><!-- contenedor -->
         <p class="copyringht">Imagenes Juan de la Torre&copy;</p>
     </footer>
+
 
   
 
